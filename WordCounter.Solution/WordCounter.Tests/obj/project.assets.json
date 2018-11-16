@@ -2825,6 +2825,19 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
+      },
+      "WordCounter/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v1.1",
+        "dependencies": {
+          "Microsoft.NETCore.App": "1.1.2"
+        },
+        "compile": {
+          "bin/placeholder/WordCounter.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WordCounter.dll": {}
+        }
       }
     }
   },
@@ -8467,6 +8480,11 @@
         "system.xml.xpath.xmldocument.4.0.1.nupkg.sha512",
         "system.xml.xpath.xmldocument.nuspec"
       ]
+    },
+    "WordCounter/1.0.0": {
+      "type": "project",
+      "path": "../WordCounter/WordCounter.csproj",
+      "msbuildProject": "../WordCounter/WordCounter.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -8474,7 +8492,8 @@
       "MSTest.TestAdapter >= 1.2.0",
       "MSTest.TestFramework >= 1.2.0",
       "Microsoft.NET.Test.Sdk >= 15.0.0",
-      "Microsoft.NETCore.App >= 1.1.2"
+      "Microsoft.NETCore.App >= 1.1.2",
+      "WordCounter >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -8500,7 +8519,11 @@
       },
       "frameworks": {
         "netcoreapp1.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\victoria\\WordCounter.Solution\\WordCounter\\WordCounter.csproj": {
+              "projectPath": "C:\\Users\\victoria\\WordCounter.Solution\\WordCounter\\WordCounter.csproj"
+            }
+          }
         }
       }
     },
