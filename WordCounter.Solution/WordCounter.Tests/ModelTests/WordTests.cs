@@ -7,7 +7,7 @@ namespace WordCounter.Tests
   public class WordTest
   {
     [TestMethod]
-    public void IsWord_CountNumberOfWordInSentence_True()
+    public void GetNumberOfWord_HowManyWordInSentence_One()
     {
 
     }
