@@ -1,7 +1,7 @@
 using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
-using WordCounter.Models;
+using WordCounter;
 
 namespace WordCounter.Tests
 {
@@ -9,22 +9,39 @@ namespace WordCounter.Tests
   public class WordTest
   {
     [TestMethod]
-    public void GetNumberOfWord_HowManyWordInSentence_2("I took apple from the appletree");
+    public void Constructor_SetsWordAndSentence_True()
     {
-      GetNumberOfWord testGetNumberOfWord = new GetNumberOfWord(2);
-      Assert.AreEqual(WordTest.GetNumberOfWord(2));
+      // Arrange
+      string testSentence = "I took apple from the appletree";
+      string testWord = "apple";
+      Word newWord = new Word(testWord, testSentence);
+      Assert.AreEqual("apple", newWord.GetWord());
+      Assert.AreEqual("I took apple from the appletree", newWord.GetSentence());
     }
 
     [TestMethod]
-    public void SearchForWord_SearchForDuplicateWord();
+    public void CompareWord_ChecksIfWordsAreTheSame_True()
     {
-      Assert.AreEqual(WordTest.SearchForWord());
+      string testSentence = "I took apple from the appletree";
+      string testWord = "apple";
+      Word newWord = new Word(testWord, testSentence);
+      bool actualResult = newWord.CompareWord("apple");
+      bool expectedResult = true;
+      Assert.AreEqual(expectedResult, actualResult);
     }
 
     [TestMethod]
-    public void RemoveWord_RemoveDuplicateWord();
+    public void CountWords_ReturNumberOfTimesWordsIsFound_1()
     {
-      Assert.AreEqual(WordTest.RemoveWord());
+      // Arrange (create variables used by the class we're testing)
+      string testSentence = "I took apple from the appletree";
+      string testWord = "apple";
+      Word newWord = new Word(testWord, testSentence);
+      int expectedResult = 1;
+      // Act (call the method that you're testing)
+      int actualResult = newWord.CountWords();
+      // Assert (compare the expected value with the actual value)
+      Assert.AreEqual(expectedResult, actualResult);
     }
 
   }
