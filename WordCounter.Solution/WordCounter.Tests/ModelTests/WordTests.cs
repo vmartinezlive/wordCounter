@@ -9,10 +9,10 @@ namespace WordCounter.Tests
   public class WordTest
   {
     [TestMethod]
-    public void GetNumberOfWord_HowManyWordInSentence_One()
+    public void GetNumberOfWord_HowManyWordInSentence_2("I took apple from the appletree");
     {
-      GetNumberOfWord testGetNumberOfWord = new GetNumberOfWord();
-      Assert.AreEqual(WordTest.GetNumberOfWord(One));
+      GetNumberOfWord testGetNumberOfWord = new GetNumberOfWord(2);
+      Assert.AreEqual(WordTest.GetNumberOfWord(2));
     }
 
     [TestMethod]
@@ -21,6 +21,11 @@ namespace WordCounter.Tests
       Assert.AreEqual(WordTest.SearchForWord());
     }
 
+    [TestMethod]
+    public void RemoveWord_RemoveDuplicateWord();
+    {
+      Assert.AreEqual(WordTest.RemoveWord());
+    }
 
   }
 }
