@@ -1,5 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Word;
+using System.Collections.Generic;
+using WordCounter.Models;
 
 namespace WordCounter.Tests
 {
@@ -9,7 +10,8 @@ namespace WordCounter.Tests
     [TestMethod]
     public void GetNumberOfWord_HowManyWordInSentence_One()
     {
-
+      GetNumberOfWord testGetNumberOfWord = new GetNumberOfWord();
+      Assert.AreEqual(testGetNumberOfWord.GetNumberOfWord(One));
     }
   }
 }
