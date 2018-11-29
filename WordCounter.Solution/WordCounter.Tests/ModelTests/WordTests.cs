@@ -12,8 +12,8 @@ namespace WordCounter.Tests
     public void WordConstructor_CreatesInstanceOfWord_Word()
     {
       //Arrange
-      string inputWord = "apple";
-      string inputsentence = "I ate an apple from appletree";
+      string word = "apple";
+      string sentence = "I ate an apple from appletree";
       Word testWord = new Word(Word);
 
       //Act and Assert

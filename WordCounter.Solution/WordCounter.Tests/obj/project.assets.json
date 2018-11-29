@@ -8502,11 +8502,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Guest/Desktop/wordCounter/WordCounter.Solution/WordCounter.Tests/WordCounter.Tests.csproj",
+      "projectUniqueName": "/Users/Guest/wordCounter/WordCounter.Solution/WordCounter.Tests/WordCounter.Tests.csproj",
       "projectName": "WordCounter.Tests",
-      "projectPath": "/Users/Guest/Desktop/wordCounter/WordCounter.Solution/WordCounter.Tests/WordCounter.Tests.csproj",
+      "projectPath": "/Users/Guest/wordCounter/WordCounter.Solution/WordCounter.Tests/WordCounter.Tests.csproj",
       "packagesPath": "/Users/Guest/.nuget/packages/",
-      "outputPath": "/Users/Guest/Desktop/wordCounter/WordCounter.Solution/WordCounter.Tests/obj/",
+      "outputPath": "/Users/Guest/wordCounter/WordCounter.Solution/WordCounter.Tests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/Guest/.nuget/NuGet/NuGet.Config"
@@ -8520,8 +8520,8 @@
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {
-            "/Users/Guest/Desktop/wordCounter/WordCounter.Solution/WordCounter/WordCounter.csproj": {
-              "projectPath": "/Users/Guest/Desktop/wordCounter/WordCounter.Solution/WordCounter/WordCounter.csproj"
+            "/Users/Guest/wordCounter/WordCounter.Solution/WordCounter/WordCounter.csproj": {
+              "projectPath": "/Users/Guest/wordCounter/WordCounter.Solution/WordCounter/WordCounter.csproj"
             }
           }
         }
