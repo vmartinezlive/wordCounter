@@ -9,23 +9,18 @@ namespace WordCounter.Tests
   public class WordTest
   {
     [TestMethod]
-    public void GetNumberOfWord_HowManyWordInSentence_2("I took apple from the appletree");
+    public void WordConstructor_CreatesInstanceOfWord_Word()
     {
-      GetNumberOfWord testGetNumberOfWord = new GetNumberOfWord(2);
-      Assert.AreEqual(WordTest.GetNumberOfWord(2));
+      //Arrange
+      string inputWord = "apple";
+      string inputsentence = "I ate an apple from appletree";
+      Word testWord = new Word(Word);
+
+      //Act and Assert
+      Assert.AreEqual(typeof(Word), testWord.GetType());
     }
 
-    [TestMethod]
-    public void SearchForWord_SearchForDuplicateWord();
-    {
-      Assert.AreEqual(WordTest.SearchForWord());
-    }
 
-    [TestMethod]
-    public void RemoveWord_RemoveDuplicateWord();
-    {
-      Assert.AreEqual(WordTest.RemoveWord());
-    }
 
   }
 }
